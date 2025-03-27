@@ -29,7 +29,7 @@ const SignUp = () => {
     try {
       // Send signup request to backend
     //   const response = await axios.post('http://localhost:5000/api/v1/signup', userData);
-    const response = await axios.post(`${process.env.REACT_APP_API_BASE_URL || 'http://localhost:5000'}/api/v1/signup`, userData);
+    const response = await axios.post(`${process.env.REACT_APP_API_BASE_URL || 'http://localhost:5000' || 'https://finance-management-backend-ksxy.onrender.com'}/api/v1/signup`, userData);
 
       
       // If signup is successful, navigate to the login page

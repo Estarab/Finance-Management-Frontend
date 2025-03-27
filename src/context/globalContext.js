@@ -3,7 +3,7 @@ import axios from 'axios'
 
 
 // const BASE_URL = "http://localhost:5000/api/v1/";
-const BASE_URL = `${process.env.REACT_APP_API_BASE_URL || 'http://localhost:5000'}/api/v1/`;
+const BASE_URL = `${process.env.REACT_APP_API_BASE_URL || 'http://localhost:5000' || 'https://finance-management-backend-ksxy.onrender.com'}/api/v1/`;
 
 
 

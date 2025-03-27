@@ -24,7 +24,7 @@ const Login = () => {
     //       'Content-Type': 'application/json',
     //     },
     try {
-        const response = await fetch(`${process.env.REACT_APP_API_BASE_URL || 'http://localhost:5000'}/api/v1/login`, {
+        const response = await fetch(`${process.env.REACT_APP_API_BASE_URL || 'http://localhost:5000' || 'https://finance-management-backend-ksxy.onrender.com'}/api/v1/login`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
